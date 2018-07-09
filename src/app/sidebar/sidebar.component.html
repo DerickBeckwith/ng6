@@ -1,12 +1,12 @@
 <nav>
   <ul>
     <li>
-      <a routerLink="">
+      <a routerLink="" [class.activated]="this.currentUrl == '/'">
         <i class="material-icons">supervised_user_circle</i>
       </a>
     </li>
     <li>
-      <a routerLink="posts">
+      <a routerLink="posts" [class.activated]="this.currentUrl == '/posts'">
         <i class="material-icons">message</i>
       </a>
     </li>
