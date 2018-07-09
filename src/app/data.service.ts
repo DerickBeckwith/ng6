@@ -12,7 +12,7 @@ export class DataService {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
 
-  getUser(userId: number) {
+  getUser(userId) {
     return this.http.get('https://jsonplaceholder.typicode.com/users/' + userId);
   }
 
